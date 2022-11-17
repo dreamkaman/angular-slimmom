@@ -1,0 +1,50 @@
+.navigator {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 70px;
+}
+.links-list {
+  position: absolute;
+  bottom: -7px;
+  left: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links-list-item {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+}
+
+.slim-mom {
+  width: 107px;
+  height: 16px;
+  padding-right: 22px;
+}
+
+.nav-link {
+  font-size: 14px;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: var(--font-grey-color);
+}
+
+.login {
+  padding: 0 7px 3px 22px;
+  border-left: 2px solid var(--lines-grey);
+}
+
+.signup {
+  padding: 0 3px 3px 7px;
+}

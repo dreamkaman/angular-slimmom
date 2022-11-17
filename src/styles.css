@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+/* Used fonts */
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(./assets/fonts/GothamPro-Bold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url(./assets/fonts/GothamPro-Light.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url(./assets/fonts/verdana.woff2) format("woff");
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url(./assets/fonts/VerdanaBold.woff2) format("woff");
+}
+
+/* normalizer */
+
+:root {
+  --main-font-family: "Verdana", sans-serif;
+  --second-font-family: "Gotham Pro", sans-serif;
+  --font-black-text-color: rgb(0, 0, 0);
+  --font-grey-color: #9b9faa;
+  --bg-grey-color: #f0f1f3;
+  --lines-grey: #e0e0e0;
+  --bg-blue-color: #264061;
+  --accent-color: #fc842d;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+body {
+  font-family: var(--main-font-family);
+  color: var(--main-black-text-color);
+  letter-spacing: 0.04em;
+  max-width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  display: block;
+}
