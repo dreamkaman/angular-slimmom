@@ -1,56 +1,142 @@
 header {
-  position: absolute;
-  top: 82px;
-  left: 0;
-  width: 100%;
-}
-.navigator {
-  position: relative;
+  padding: 18px 0;
+  border-bottom: 2px solid var(--lines-grey);
 
+  font-family: var(--second-font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 4%;
+  line-height: 0.96;
+  text-transform: uppercase;
+  color: var(--font-grey-color);
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .logo {
-  width: 70px;
+  width: 47px;
 }
-.links-list {
-  position: absolute;
-  bottom: 8px;
-  left: 75px;
 
+.slim-mom {
+  display: none;
+}
+
+.nav-link:hover {
+  color: var(--font-main-text-color);
+}
+
+.links-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .links-list-item {
   display: flex;
   align-items: center;
-  min-height: 32px;
 }
 
-.slim-mom {
-  width: 107px;
-  height: 16px;
-  padding-right: 22px;
+.slim-mom-dt {
+  display: none;
 }
 
-.nav-link {
-  font-size: 14px;
-  letter-spacing: 4%;
-  text-transform: uppercase;
+@media screen and (min-width: 320px) {
+  .signup {
+    margin-left: 15px;
+  }
 }
 
-.nav-link:hover {
-  color: var(--font-grey-color);
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 47px;
+  }
+
+  .slim-mom {
+    display: block;
+    width: 105px;
+    height: 16px;
+    margin-left: 10px;
+  }
+
+  .signup {
+    margin-left: 15px;
+  }
 }
 
-.login {
-  padding: 0 7px 3px 22px;
-  border-left: 2px solid var(--lines-grey);
-}
+@media screen and (min-width: 1280px) {
+  header {
+    position: absolute;
+    top: 82px;
+    left: 0;
+    width: 100%;
+    border-bottom: none;
+  }
+  .navigator {
+    position: relative;
 
-.signup {
-  padding: 0 3px 3px 7px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .links-list {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links-list-item {
+    display: flex;
+    align-items: center;
+    min-height: 32px;
+  }
+
+  .slim-mom {
+    display: none;
+  }
+
+  .slim-mom-dt {
+    display: block;
+    width: 107px;
+    height: 16px;
+    padding-right: 22px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    letter-spacing: 4%;
+    text-transform: uppercase;
+    color: var(--font-grey-color);
+  }
+
+  .nav-link:hover {
+    color: var(--font-main-text-color);
+  }
+
+  .login {
+    padding-left: 22px;
+    border-left: 2px solid var(--lines-grey);
+  }
+
+  .signup {
+    margin-left: 22px;
+  }
 }
